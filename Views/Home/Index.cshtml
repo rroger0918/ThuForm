@@ -1,0 +1,171 @@
+﻿@model IEnumerable<ThuForm.Models.RegistForm>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<section id="home-page">
+    <div class="container-fluid home-bg">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 text-center home-page">
+
+                <div class="main-logo">
+                    <img src="~/images/whitethu.png" width="300">
+                </div>
+
+                <div class=" col-sm-12">
+                    <h1>昂哥 AI 研討會</h1>
+                </div>
+
+                <!-- COUNTDOWN -->
+                <div>
+                    <h1 id="demo">
+
+                        <!-- /COUNTDOWN -->
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /#home-page -->
+
+<section id="service-page">
+
+    <div class="container">
+        <div class="row ">
+
+            <div class="col-md-4 ">
+                <h1 align="left">AI東海，贏戰未來</h1>
+                <h2 align="left">畢業 &ne; 離別</h2>
+                <h2 align="left">考試 &times; 升學 &times; 職場</h2>
+                <h2 align="left">畢業後各奔東西</h2>
+                <h2 align="left">朋友們一同相聚分享 </h2>
+                <h2 align="left">共創美好未來</h2>
+            </div>
+
+            <div class="col-12 col-md-8 ">
+                @Scripts.Render("https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
+                <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_ysjb4sex.json" background="transparent" speed="1" style="width: 120%;" loop autoplay></lottie-player>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /#service-page -->
+
+<section id="about-page">
+    <div class="container">
+        <!-- 子洋趙姊鴻儒 -->
+        <div class="row">
+
+
+            <div class="col-6 col-md-3 col-sm-6 text-center service">
+                <i class="fa fa-thumbs-o-up"></i>
+                <h1 class="about-title">聚餐主題</h1>
+                <p>AI技術交流&hearts;</p>
+            </div>
+            <div class="col-6 col-md-3 col-sm-6 text-center service">
+                <i class="fa fa-cutlery"></i>
+                <h1 class="about-title">本次餐廳</h1>
+                <p>台中-阿秋大肥鵝</p>
+            </div>
+
+            <div class="col-6 col-md-3 col-sm-6 text-center service">
+                <i class="fa fa-clock-o"></i>
+                <h1 class="about-title">時間</h1>
+                <p>2022年1月15日</p>
+            </div>
+            <div class="col-6 col-md-3 col-sm-6 text-center service">
+                <i class="fa fa-align-justify"></i>
+                <h1 class="about-title">查看菜單</h1>
+                <p> <a href="http://www.ac-rg.com/edcontent_d.php?lang=tw&tb=4&id=790"><u>連結</u></a></p>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /#about-page -->
+
+
+
+<section id="contact-page ">
+ 
+    <div class="container ">
+        <div class="row " style=" padding-top: 40px; padding-bottom: 40px; ">
+            <div class="col-md-12 ">
+                <form id="main-contact-form " class="contact-form-area text-center ">
+                    <h1 class="contact-title ">報名聚會，把握機會</h1>
+                    <div class="service-aro-icon ">
+                        <div class="service-aro-left "></div>
+                        <i class="fa fa-rocket "></i>
+                        <div class="service-aro-right "></div>
+                    </div>
+                    <h2>把握AI趨勢，跨領域學習</h2>                   
+                    <div class="contact-form  ">
+                        <div class="row align-items-center">
+                            <div class="col-sm-10 your-message col-sm-offset-1 ">
+                                <div class="form-group">
+                                    @if (Model.Count() == 0)
+                                    {
+                                        <div class="alert" alert-info>
+                                            <strong>無紀錄</strong>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <h2>當前成員</h2>
+
+                                        <table class="table">
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Id)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Name)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Total)
+                                                </th>
+                                                <!--<th></th>-->
+                                            </tr>
+
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Id)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Name)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Total)
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </table>
+                                    }
+                                    </div>   
+                                <div class="contact-form">
+                                    <div class="row ">
+                                        <div class="col-sm-10 your-message col-sm-offset-1 ">
+                                            <div class="form-group ">
+                                                @Html.ActionLink("立即報名!", "Form", "Home", new { @class = "btn btn-primary btn-lg submit-button " })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</section>
