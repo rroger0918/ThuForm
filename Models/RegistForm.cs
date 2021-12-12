@@ -17,7 +17,8 @@ namespace ThuForm.Models
 
     public partial class RegistForm
     {
-        [DisplayName("東海(屆)")]
+        [DisplayName("東海")]
+        [Range(1, 99, ErrorMessage = "屆數必須介於1~99之間")]
         public Nullable<int> Id { get; set; }
         [DisplayName("*姓名")]
         [Required(ErrorMessage = "姓名不可空白")]
@@ -37,6 +38,7 @@ namespace ThuForm.Models
         [Display(Name = "備註")]
         public string Note { get; set; }
         public int DataID { get; set; }
+
     }
 }
 

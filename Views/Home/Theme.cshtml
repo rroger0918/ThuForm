@@ -1,0 +1,336 @@
+﻿@model IEnumerable<ThuForm.Models.RegistForm>
+@{
+    ViewBag.Title = "Home Page";
+}
+t>
+<!------ 照片牆 ---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="~/Content/photowall.css">
+<!------ 照片牆 ---------->
+
+<style>
+    .map {
+        margin-top: 20px;
+    }
+</style>
+
+<!--<section id="home-page">
+    <div class="container-fluid home-bg">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 text-center home-page">
+
+                <div class="main-logo">
+                    <img src="~/images/whitethu.png" width="300">
+                </div>
+
+                <div class=" col-sm-12">
+                    <h1>昂哥 AI 研討會</h1>
+                </div>-->
+
+                <!-- COUNTDOWN -->
+                <!--<div>
+                    <h1 id="demo">-->
+
+                        <!-- /COUNTDOWN -->
+                    <!--</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- /#home-page -->
+
+<section class="portfolio" id="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <br>
+                <br>
+                <h1 class="gallery-title">活動講師群</h1>
+                <h2 class="gallery-subtitle">本次活動邀請到國內多位重量級大師及專業講師，來分享他們的專業知識和經驗</h2>
+            </div>
+
+                @*<div align="center">
+                    <button class="filter-button" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="category1">Designing</button>
+                    <button class="filter-button" data-filter="category2">Development</button>
+                    <button class="filter-button" data-filter="category3">Graphics</button>
+                </div>*@
+
+                <br />
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox">
+                        <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                        <div class='img-info'>
+                            <h4>郵局資安管理員</h4>
+                            <p>璇璇海豹</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- /#service-page -->
+<!-- /#service-page -->
+
+<section id="about-page">
+    <div class="container" style="color:white;">
+        <div class="row">
+            <h1>活動議程</h1>
+            <table border="5" cellspacing="0" align="center">
+                <!--<caption>Timetable</caption>-->
+                <tr>
+                    <td align="center" height="50"
+                        width="100">
+                       
+                        <b>Day/Period</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>I</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>II</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>III</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>Lunch<br>12:00-13:00</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>IV</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>V</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>VI</b>
+                    </td>
+                    <td align="center" height="50"
+                        width="100">
+                        <b>VII</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>週六</b>
+                    </td>
+                    <td colspan="3" align="center"
+                        height="50">
+                        集合
+                    </td>
+
+                    <td align="center" height="50">豆腐街</td>
+                    <td align="center" height="50">水雲吊橋</td>
+                    <td align="center" height="50">泰安觀止</td>
+                    <td align="center" height="50">火鍋食材採買</td>
+                    <td align="center" height="50">技術會議<br>(AI火鍋&麻將演算法)</td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>週日</b>
+                    </td>
+                    <td colspan="3" align="center"
+                        height="50">
+                        採草莓 ( 含賴床 ) 
+                    </td>
+                    <td align="center" height="50">南庄老街</td>
+                    <td align="center" height="50">向天湖</td>
+                    <td align="center" height="50">神仙谷瀑布</td>
+                    <td align="center" height="50">郵局黑客松</td>
+                    <td align="center" height="50">平安回程</td>
+                </tr>                
+            </table>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /#about-page -->
+<section id="service-page">
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-lg-6">
+                <h1 align="left">活動地點</h1>
+                <h2 align="left">☞苗栗 - 愛在甜心草莓民宿</h2>
+                <span>364 苗栗縣苗栗市苗栗縣大湖鄉富興村七鄰八寮灣33-5號</span>
+                <h1 align="left">交通方式</h1>
+                <h2 align="left">☞自行前往</h2>
+                <span>高鐵苗栗站 - 將有專員開車迎接</span>
+                <h2 align="left">☞順風車</h2>
+                <span>1.台北火車站 - 配有汽車三台</span><br>
+                <span>2.台中高鐵站 - 配有汽車一台</span><br>
+                <h1 align="left">費用</h1>
+                <h2 align="left">☞住宿費 $1250</h2>
+                <span>包含：民宿一夜 + 工人智慧採草莓行程</span>
+                <h2 align="left">☞公費 $1300</h2>
+                <span>包含：車油錢$300 + 火鍋錢$1000</span>
+            </div>
+
+            <div class="col-lg-6 ">
+                <div class="map">
+                    <iframe style="width: 100%; height: 450px; border: 0;" ; position: relative;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14529.18225750228!2d120.87298!3d24.4405288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2739fcedf0efeb7!2z5oSb5Zyo55Sc5b-D!5e0!3m2!1szh-TW!2stw!4v1639292033883!5m2!1szh-TW!2stw" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+<script>
+    var countDownDate = new Date("March 26, 2022 8:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + " 天 " + hours + " 時 " +
+            minutes + " 分 " + seconds + " 秒 ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script src="~/Scripts/photowall.js"></script>
+

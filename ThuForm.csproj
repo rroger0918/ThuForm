@@ -172,6 +172,7 @@
     <Content Include="Content\normalize.css" />
     <Content Include="Content\orange.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\photowall.css" />
     <Content Include="Content\purple.css" />
     <Content Include="Content\red.css" />
     <Content Include="Content\slate.css" />
@@ -182,6 +183,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\0326.jpg" />
+    <Content Include="images\570394.JPG" />
+    <Content Include="images\close.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\next.png" />
+    <Content Include="images\preloader.gif" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\slider.jpg" />
+    <Content Include="images\whitethu.png" />
     <Content Include="Models\RegistModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>RegistModel.Context.cs</LastGenOutput>
@@ -206,7 +216,6 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\countdown.js" />
     <Content Include="Scripts\demo.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -220,6 +229,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\photowall.js" />
     <Content Include="Scripts\scripts.js" />
     <Content Include="Scripts\styleswitcher.js" />
     <Content Include="Web.config" />
@@ -237,6 +247,7 @@
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ManagePage.cshtml" />
+    <Content Include="Views\Home\Theme.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup />

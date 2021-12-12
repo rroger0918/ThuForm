@@ -3,37 +3,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<section id="home-page">
-    <div class="container-fluid home-bg">
 
-        <div class="row">
-
-            <div class="col-sm-12 col-md-12 text-center home-page">
-
-                <div class="main-logo">
-                    <img src="~/images/whitethu.png" width="300">
-                </div>
-
-                <div class=" col-sm-12">
-                    <h1>昂哥 AI 研討會</h1>
-                </div>
-
-                <!-- COUNTDOWN -->
-                <div>
-                    <h1 id="demo">
-
-                        <!-- /COUNTDOWN -->
-                    </h1>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /#home-page -->
-
-<!-- /#service-page -->
-<!-- /#about-page -->
 
 
 
@@ -54,6 +24,7 @@
                                     }
                                     else
                                     {
+                                        <br>
                                         <h2>當前成員</h2>
                                         <ul class="nav navbar-nav">
                                             <li>@Html.ActionLink("管理員登出", "Logout", "Home")</li>
@@ -72,7 +43,13 @@
                                                     @Html.DisplayNameFor(model => model.Name)
                                                 </th>
                                                 <th>
+                                                    @Html.DisplayNameFor(model => model.Mail)
+                                                </th>
+                                                <th>
                                                     @Html.DisplayNameFor(model => model.Total)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Note)
                                                 </th>
                                                 <th></th>
                                             </tr>
@@ -90,9 +67,14 @@
                                                 @Html.DisplayFor(modelItem => item.Name)
                                             </td>
                                             <td>
+                                                @Html.DisplayFor(modelItem => item.Mail)
+                                            </td>
+                                            <td>
                                                 @Html.DisplayFor(modelItem => item.Total)
                                             </td>
-
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Note)
+                                            </td>
                                             <td>
                                                 <a href="@Url.Action("Edit")?DataId=@item.DataID" class="btn btn-warning">編輯</a>
                                                 <a href="@Url.Action("Delete")?DataId=@item.DataID"

@@ -26,6 +26,12 @@ namespace ThuForm.Controllers
             return View(registform);
         }
 
+        [AllowAnonymous]
+        public ActionResult Theme()
+        {
+            return View();
+        }
+
         [Authorize]
         public ActionResult ManagePage()
         {
