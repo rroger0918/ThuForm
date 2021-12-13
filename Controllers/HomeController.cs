@@ -48,6 +48,7 @@ namespace ThuForm.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public ActionResult Form(RegistForm registForm)
         {
