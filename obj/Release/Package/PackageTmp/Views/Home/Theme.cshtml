@@ -1,0 +1,310 @@
+﻿@model IEnumerable<ThuForm.Models.RegistForm>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!------ 照片牆 ---------->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="~/Content/photowall.css">
+<!------ 照片牆 ---------->
+
+<style>
+    .map {
+        margin-top: 20px;
+    }
+</style>
+
+<section class="portfolio" id="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <br>
+                <br>
+                <h1 class="gallery-title">活動講師群</h1>
+                <h2 class="gallery-subtitle">本次活動邀請到國內多位重量級大師及專業講師，來分享他們的專業知識和經驗</h2>
+            </div>
+
+            <div align="center">
+                <button class="filter-button" data-filter="all">All</button>
+                <button class="filter-button" data-filter="Day1">Day1 技術會議導師</button>
+                <button class="filter-button" data-filter="Day2">Day2 黑客松導師</button>
+            </div>
+
+            <br />
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/0326.jpg" />
+                    <div class='img-info '>
+                        <span>中華郵政 <br> 資安管理員</span><br>
+                        <span>璇璇海豹</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/400X250.jpg" />
+                    <div class='img-info'>
+                        <span>ShopBack <br> FrontEnd Engineer</span><br>
+                        <span>Johnny</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/mon.jpg" />
+                    <div class='img-info'>
+                        <span>LT.C <br> Creator</span><br>
+                        <span>Mon</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/Ting.jpg" />
+                    <div class='img-info'>
+                        <span>玉山銀行 <br> BackEnd Engineer</span><br>
+                        <span>冠霆</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/owen.jpg" />
+                    <div class='img-info'>
+                        <span>今網通訊 <br> FrontEnd Engineer</span><br>
+                        <span>Owen</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/jhao.jpg" />
+                    <div class='img-info'>
+                        <span>Shopee <br> QA Engineer</span><br>
+                        <span>趙姊</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/Limon.jpg" />
+                    <div class='img-info'>
+                        <span>TKS男人手作 <br> 執行特助</span><br>
+                        <span>Daniel</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/yachu.jpg" />
+                    <div class='img-info'>
+                        <span>法務部資訊處 <br> 設計師</span><br>
+                        <span>Wenna</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/flower.jpg" />
+                    <div class='img-info'>
+                        <span>台北市政府資訊處 <br> 管理師</span><br>
+                        <span>采軒</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/adam.jpg" />
+                    <div class='img-info'>
+                        <span>勤業眾信 <br> 網絡安全風險顧問</span><br>
+                        <span>Adam Wang</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/e..jpg" />
+                    <div class='img-info'>
+                        <span>E.T._Studio <br> Full stack Engineer</span><br>
+                        <span>Rose Wang</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
+                <a class="fancybox">
+                    <img class="img-responsive" alt="" src="~/images/teacher/yang.jpg" />
+                    <div class='img-info'>
+                        <span>PE.Fund<br> 候選人</span><br>
+                        <span>Sam Yang</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /#service-page -->
+<!-- /#service-page -->
+
+<section id="about-page">
+    <div class="container" style="color:white;">
+        <div class="row">
+            <h1>活動議程</h1>
+            <table border="5" cellspacing="3" align="center">
+                <!--<caption>Timetable</caption>-->
+                <tr>
+                    <td align="center" height="50" width="10%">
+                        <b>Day / Period</b>
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        <b>週六</b>
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        <b>週日</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>I</b>
+                    </td>
+                    <td colspan="3" rowspan="3" align="center" height="50">
+                        集<br><br>合<br>
+                    </td>
+                    <td colspan="3" rowspan="3" align="center" height="50">
+                        採<br>草<br>莓<br>
+                    </td>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>II</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>III</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>Lunch<br>12:00-13:00</b>
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        豆腐街
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        南庄老街
+                    </td>
+
+                </tr>
+                </tr>
+
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>IV</b>
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        水雲吊橋
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        向天湖 + 神仙谷瀑布
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>V</b>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        泰安觀止
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        郵局黑客松<br>Big Data &times; 智慧物流
+                    </td>
+
+
+
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>Dinner<br>18:00-20:00</b>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        泉滾波士頓活龍蝦<br>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        焰炙A5日本宮崎和牛<br>
+                    </td>
+
+
+
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>VI</b>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        技術會議<br>Rule-Based &times; 麻將
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        平安回程
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /#about-page -->
+<section id="service-page">
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-lg-6">
+                <h1 align="left">活動地點</h1>
+                <h2 align="left">☞苗栗 - 愛在甜心草莓民宿</h2>
+                <span>364 苗栗縣苗栗市苗栗縣大湖鄉富興村七鄰八寮灣33-5號</span>
+                <h1 align="left">交通方式</h1>
+                <h2 align="left">☞自行前往</h2>
+                <span>高鐵苗栗站 - 將有專員開車迎接</span>
+                <h2 align="left">☞順風車</h2>
+                <span>1.台北火車站 - 配有汽車二台</span><br>
+                <span>2.台中高鐵站 - 配有汽車一台</span><br>
+                <h1 align="left">費用</h1>
+                <h2 align="left">☞住宿費 $1250</h2>
+                <span>包含：民宿一夜 + 工人智慧採草莓行程</span>
+                <h2 align="left">☞公費 $1000</h2>
+                <span>包含：車油錢$300 + 火鍋錢$700</span>
+            </div>
+
+            <div class="col-lg-6 ">
+                <div class="map">
+                    <iframe style="width: 100%; height: 450px; border: 0;" ; position: relative;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14529.18225750228!2d120.87298!3d24.4405288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2739fcedf0efeb7!2z5oSb5Zyo55Sc5b-D!5e0!3m2!1szh-TW!2stw!4v1639292033883!5m2!1szh-TW!2stw" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+
+
+
+
+

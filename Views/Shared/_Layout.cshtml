@@ -22,6 +22,7 @@
     <link rel="alternate stylesheet" href="~/Content/blue-munsell.css" title="blue-munsell">
     <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
     <link rel="stylesheet" href="~/Content/demo.css">
+    
     <style>
         p {
             text-align: center;
@@ -33,11 +34,11 @@
 </head>
 <body>
     <div id="st-preloader">
-              <div id="pre-status">
-                  <div class="preload-placeholder"></div>
-              </div>
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
         </div>
-  
+    </div>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -53,6 +54,7 @@
                     <li>@Html.ActionLink("首頁", "Index", "Home")</li>
                     <li>@Html.ActionLink("議程", "Theme", "Home")</li>
                     <li>@Html.ActionLink("報名表單", "Form", "Home")</li>
+                    <li>@Html.ActionLink("來信建議", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -66,21 +68,19 @@
                 <div class="row">
                     <div class="col-sm-12 social-shear text-center">
                         <span>&copy; 2021 <strong></strong>. All Rights Reserved. Designed by <strong>@Html.ActionLink("Mon Bro", "ManagePage", "Home")</strong>&emsp; </span>
-                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=760pvdld" target="_blank"><i class="fa fa-commenting" ></i></a>
+                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=760pvdld" target="_blank"><i class="fa fa-commenting"></i></a>
                     </div>
                     <!-- FB -->
                     @*<a href="" target="_blank"><i class="fa fa-facebook"></i></a>*@
                     <!-- YT -->
                     @*<a href="" target="_blank"><i class="fa fa-youtube-play"></i></a>*@
                     <!-- LINE機器人 -->
-
-
                     <!--<a href="#" target="_blank"><i class="fa fa-link"></i></a> -->
                     <!-- /.social-shear -->
                 </div>
                 <br>
 
-                
+
 
             </div>
         </div>
@@ -95,9 +95,18 @@
     <script type="text/javascript " src="~/Scripts/scripts.js "></script>
     <!-- Scripts -->
     <script type="text/javascript " src="~/Scripts/styleswitcher.js "></script>
-    <script type="text/javascript " src="~/Scripts/demo.js "></script>
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript " src="~/Scripts/demo.js "></script>
+
+    <!-- EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="~/Scripts/lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- EMAILJS -->
+    <script src="~/Scripts/email.js"></script>
+    <!-- EMAILJS -->
+
 
 </body>
 </html>

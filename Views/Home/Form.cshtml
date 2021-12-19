@@ -6,14 +6,23 @@
 }
 <style>
     #labelID{
-        width: 20%;
+        width: 50%;
     }
     #labelID2 {
-        width: 20%;
+        width: 50%;
     }
-    #rookie{
-               margin-top:6%;
-           }
+    #rookie {
+        margin-top: 6%;
+    }
+    #box{
+        width:90%;
+    }
+    #box2 {
+        width: 90%;
+    }
+    #box3 {
+        width: 90%;
+    }
 
 </style>
 
@@ -42,7 +51,7 @@
                     <div class="form-group">
                         @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "name", type = "text", id = "fName" } })
+                            @Html.EditorFor(model => model.Name, new {htmlAttributes = new { id = "box2", @class = "form-control", placeholder = "name", type = "text"} })
                             @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -50,7 +59,7 @@
                     <div class="form-group">
                         @Html.LabelFor(model => model.Mail, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Mail, new { htmlAttributes = new { @class = "form-control", placeholder = "email" } })
+                            @Html.EditorFor(model => model.Mail, new {  htmlAttributes = new { id = "box3", @class = "form-control", placeholder = "email" } })
                             @Html.ValidationMessageFor(model => model.Mail, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -58,7 +67,7 @@
                     <div class="form-group">
                         @Html.LabelFor(model => model.Total, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Total, new { htmlAttributes = new { @id = "labelID2", @class = "form-control", placeholder = "含自己 ( Num ) " } })
+                            @Html.EditorFor(model => model.Total, new {htmlAttributes = new { @id = "labelID2", @class = "form-control", placeholder = "含自己 ( Num ) " } })
                             @Html.ValidationMessageFor(model => model.Total, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -67,7 +76,7 @@
                     <div class="form-group">
                         @Html.LabelFor(model => model.Note, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextAreaFor(model => model.Note, new { cols = 80, rows = 10, placeholder = "海鮮素、白肉素、半夜1點到早上7點素、只在民宿打麻將、想夜衝……等等", htmlAttributes = new { @class = "form-control" } })
+                            @Html.TextAreaFor(model => model.Note, new { id="box", cols = 80, rows = 10, placeholder = "海鮮素、白肉素、半夜1點到早上7點素、只在民宿打麻將、想夜衝……等等", htmlAttributes = new { @class = "form-control" } })
                         </div>
                     </div>
 
@@ -118,4 +127,5 @@
                         return defaultRangeValidator.call(this, value, element, param);
                     }
                 }
+
             </script>

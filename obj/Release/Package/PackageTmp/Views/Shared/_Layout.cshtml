@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOP MON 研討會報名表單</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/normalize.css" />
+    <link rel="stylesheet" href="~/Content/style.css" />
+    <!-- COLORS -->
+    <link rel="stylesheet" href="~/Content/blue.css" title="blue">
+    <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <link rel="alternate stylesheet" href="~/Content/green.css" title="green">
+    <link rel="alternate stylesheet" href="~/Content/orange.css" title="orange">
+    <link rel="alternate stylesheet" href="~/Content/purple.css" title="purple">
+    <link rel="alternate stylesheet" href="~/Content/slate.css" title="slate">
+    <link rel="alternate stylesheet" href="~/Content/yellow.css" title="yellow">
+    <link rel="alternate stylesheet" href="~/Content/red.css" title="red">
+    <link rel="alternate stylesheet" href="~/Content/blue-munsell.css" title="blue-munsell">
+    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+    <link rel="stylesheet" href="~/Content/demo.css">
+    
+    <style>
+        p {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="st-preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("昂哥AI研討會", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("首頁", "Index", "Home")</li>
+                    <li>@Html.ActionLink("議程", "Theme", "Home")</li>
+                    <li>@Html.ActionLink("報名表單", "Form", "Home")</li>
+                    <li>@Html.ActionLink("來信建議", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    <footer class="footer">
+        <div class="container   text-right ">
+            <div class="row">
+                <!-- 圖標網址 https://fontawesome.com/v4.7.0/icons/ -->
+                <div class="row">
+                    <div class="col-sm-12 social-shear text-center">
+                        <span>&copy; 2021 <strong></strong>. All Rights Reserved. Designed by <strong>@Html.ActionLink("Mon Bro", "ManagePage", "Home")</strong>&emsp; </span>
+                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=760pvdld" target="_blank"><i class="fa fa-commenting"></i></a>
+                    </div>
+                    <!-- FB -->
+                    @*<a href="" target="_blank"><i class="fa fa-facebook"></i></a>*@
+                    <!-- YT -->
+                    @*<a href="" target="_blank"><i class="fa fa-youtube-play"></i></a>*@
+                    <!-- LINE機器人 -->
+                    <!--<a href="#" target="_blank"><i class="fa fa-link"></i></a> -->
+                    <!-- /.social-shear -->
+                </div>
+                <br>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script type=" text/javascript " src="~/Scripts/jquery.min.js "></script>
+    <!-- jQuery -->
+    <script type="text/javascript " src="~/Scripts/bootstrap.min.js "></script>
+    <!-- Countdown -->
+    <script type="text/javascript " src="~/Scripts/jquery.ajaxchimp.js "></script>
+    <!-- ajaxchimp -->
+    <script type="text/javascript " src="~/Scripts/scripts.js "></script>
+    <!-- Scripts -->
+    <script type="text/javascript " src="~/Scripts/styleswitcher.js "></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript " src="~/Scripts/demo.js "></script>
+
+    <!-- EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="~/Scripts/lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- EMAILJS -->
+    <script src="~/Scripts/email.js"></script>
+    <!-- EMAILJS -->
+
+
+</body>
+</html>

@@ -2,9 +2,8 @@
 @{
     ViewBag.Title = "Home Page";
 }
-t>
+
 <!------ 照片牆 ---------->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="~/Content/photowall.css">
 <!------ 照片牆 ---------->
@@ -14,33 +13,6 @@ t>
         margin-top: 20px;
     }
 </style>
-
-<!--<section id="home-page">
-    <div class="container-fluid home-bg">
-
-        <div class="row">
-
-            <div class="col-sm-12 col-md-12 text-center home-page">
-
-                <div class="main-logo">
-                    <img src="~/images/whitethu.png" width="300">
-                </div>
-
-                <div class=" col-sm-12">
-                    <h1>昂哥 AI 研討會</h1>
-                </div>-->
-<!-- COUNTDOWN -->
-<!--<div>
-    <h1 id="demo">-->
-<!-- /COUNTDOWN -->
-<!--</h1>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>-->
-<!-- /#home-page -->
 
 <section class="portfolio" id="portfolio">
     <div class="container-fluid">
@@ -53,131 +25,130 @@ t>
                 <h2 class="gallery-subtitle">本次活動邀請到國內多位重量級大師及專業講師，來分享他們的專業知識和經驗</h2>
             </div>
 
-            @*<div align="center">
-                    <button class="filter-button" data-filter="all">All</button>
-                    <button class="filter-button" data-filter="category1">Designing</button>
-                    <button class="filter-button" data-filter="category2">Development</button>
-                    <button class="filter-button" data-filter="category3">Graphics</button>
-                </div>*@
+            <div align="center">
+                <button class="filter-button" data-filter="all">All</button>
+                <button class="filter-button" data-filter="Day1">Day1 技術會議導師</button>
+                <button class="filter-button" data-filter="Day2">Day2 黑客松導師</button>
+            </div>
 
             <br />
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
-                    <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                    <img class="img-responsive" alt="" src="~/images/teacher/0326.jpg" />
+                    <div class='img-info '>
+                        <span>中華郵政 <br> 資安管理員</span><br>
+                        <span>璇璇海豹</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/400X250.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>ShopBack <br> FrontEnd Engineer</span><br>
+                        <span>Johnny</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/mon.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>LT.C <br> Creator</span><br>
+                        <span>Mon</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/Ting.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>玉山銀行 <br> BackEnd Engineer</span><br>
+                        <span>冠霆</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/owen.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>今網通訊 <br> FrontEnd Engineer</span><br>
+                        <span>Owen</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/jhao.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>Shopee <br> QA Engineer</span><br>
+                        <span>趙姊</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/Limon.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>TKS男人手作 <br> 執行特助</span><br>
+                        <span>Daniel</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/yachu.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>法務部資訊處 <br> 設計師</span><br>
+                        <span>Wenna</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/flower.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>台北市政府資訊處 <br> 管理師</span><br>
+                        <span>采軒</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day2">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/adam.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>勤業眾信 <br> 網絡安全風險顧問</span><br>
+                        <span>Adam Wang</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/e..jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>E.T._Studio <br> Full stack Engineer</span><br>
+                        <span>Rose Wang</span>
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+            <div class="gallery_product col-sm-3 col-xs-6 filter Day1">
                 <a class="fancybox">
-                    <img class="img-responsive" alt="" src="~/images/0326.jpg" />
+                    <img class="img-responsive" alt="" src="~/images/teacher/yang.jpg" />
                     <div class='img-info'>
-                        <h4>郵局資安管理員</h4>
-                        <p>璇璇海豹</p>
+                        <span>PE.Fund<br> 候選人</span><br>
+                        <span>Sam Yang</span>
                     </div>
                 </a>
             </div>
@@ -192,75 +163,108 @@ t>
     <div class="container" style="color:white;">
         <div class="row">
             <h1>活動議程</h1>
-            <table border=5  cellspacing="0" align="center">
+            <table border="5" cellspacing="3" align="center">
                 <!--<caption>Timetable</caption>-->
                 <tr>
-                    <td align="center" height="50"
-                        width="100">
-
-                        <b>Day/Period</b>
+                    <td align="center" height="50" width="10%">
+                        <b>Day / Period</b>
                     </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>I</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>II</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>III</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>Lunch<br>12:00-13:00</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>IV</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>V</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>VI</b>
-                    </td>
-                    <td align="center" height="50"
-                        width="100">
-                        <b>VII</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center" height="50">
+                    <td colspan="3" align="center" height="50">
                         <b>週六</b>
                     </td>
-                    <td colspan="3" align="center"
-                        height="50">
-                        集合
-                    </td>
-
-                    <td align="center" height="50">豆腐街</td>
-                    <td align="center" height="50">水雲吊橋</td>
-                    <td align="center" height="50">泰安觀止</td>
-                    <td align="center" height="50">火鍋食材採買</td>
-                    <td align="center" height="50">技術會議<br>(AI火鍋&麻將演算法)</td>
-                </tr>
-                <tr>
-                    <td align="center" height="50">
+                    <td colspan="3" align="center" height="50">
                         <b>週日</b>
                     </td>
-                    <td colspan="3" align="center"
-                        height="50">
-                        採草莓 ( 含賴床 )
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>I</b>
                     </td>
-                    <td align="center" height="50">南庄老街</td>
-                    <td align="center" height="50">向天湖</td>
-                    <td align="center" height="50">神仙谷瀑布</td>
-                    <td align="center" height="50">郵局黑客松</td>
-                    <td align="center" height="50">平安回程</td>
+                    <td colspan="3" rowspan="3" align="center" height="50">
+                        集<br><br>合<br>
+                    </td>
+                    <td colspan="3" rowspan="3" align="center" height="50">
+                        採<br>草<br>莓<br>
+                    </td>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>II</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>III</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>Lunch<br>12:00-13:00</b>
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        豆腐街
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        南庄老街
+                    </td>
+
+                </tr>
+                </tr>
+
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>IV</b>
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        水雲吊橋
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        向天湖 + 神仙谷瀑布
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>V</b>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        泰安觀止
+                    </td>
+                    <td colspan="3" align="center" height="50">
+                        郵局黑客松<br>Big Data &times; 智慧物流
+                    </td>
+
+
+
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>Dinner<br>18:00-20:00</b>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        泉滾波士頓活龍蝦<br>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        焰炙A5日本宮崎和牛<br>
+                    </td>
+
+
+
+                </tr>
+                <tr>
+                    <td align="center" height="50" width="100">
+                        <b>VI</b>
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        技術會議<br>Rule-Based &times; 麻將
+                    </td>
+
+                    <td colspan="3" align="center" height="50">
+                        平安回程
+                    </td>
+
                 </tr>
             </table>
         </div>
@@ -298,13 +302,9 @@ t>
     </div>
     <!-- /.container -->
 </section>
-$(document).ready(function() {
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-<script src="~/Scripts/photowall.js"></script>
+
+
+
+
+
 

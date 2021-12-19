@@ -135,6 +135,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\RegistForm.cs">
       <DependentUpon>RegistModel.tt</DependentUpon>
     </Compile>
@@ -183,7 +184,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\0326.jpg" />
     <Content Include="images\570394.JPG" />
     <Content Include="images\close.png" />
     <Content Include="images\loading.gif" />
@@ -191,6 +191,18 @@
     <Content Include="images\preloader.gif" />
     <Content Include="images\prev.png" />
     <Content Include="images\slider.jpg" />
+    <Content Include="images\teacher\0326.jpg" />
+    <Content Include="images\teacher\400X250.jpg" />
+    <Content Include="images\teacher\adam.jpg" />
+    <Content Include="images\teacher\e..jpg" />
+    <Content Include="images\teacher\flower.JPG" />
+    <Content Include="images\teacher\jhao.JPG" />
+    <Content Include="images\teacher\Limon.jpg" />
+    <Content Include="images\teacher\mon.jpg" />
+    <Content Include="images\teacher\owen.jpg" />
+    <Content Include="images\teacher\Ting.jpg" />
+    <Content Include="images\teacher\yachu.JPG" />
+    <Content Include="images\teacher\yang.jpg" />
     <Content Include="images\whitethu.png" />
     <Content Include="Models\RegistModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -215,8 +227,11 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
+    <None Include="Properties\PublishProfiles\thuForm - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\demo.js" />
+    <Content Include="Scripts\email.js" />
+    <Content Include="Scripts\jquery-1.4.3.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -228,8 +243,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\photowall.js" />
     <Content Include="Scripts\scripts.js" />
     <Content Include="Scripts\styleswitcher.js" />
     <Content Include="Web.config" />
@@ -249,6 +264,7 @@
     <Content Include="Views\Home\ManagePage.cshtml" />
     <Content Include="Views\Home\Theme.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
