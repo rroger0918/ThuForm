@@ -32,6 +32,12 @@ namespace ThuForm.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
         [Authorize]
         public ActionResult ManagePage()
         {
