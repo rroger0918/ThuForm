@@ -2,13 +2,21 @@
 ===  EXPAND COLLAPSE            ====
 =================================== */
  $(document).ready(function(){
- $('#toggle-switcher').click(function(){
-		if($(this).hasClass('open')){
-			$(this).removeClass('open');
-			$('#switch-style').animate({'left':'-220px'});
-		}else{
-			$(this).addClass('open');
-			$('#switch-style').animate({'left':'0'});
-		}
-	});
+    
+    $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+    
+        if (value == "all") {
+            $('.filter').show('1000');
+        } else {
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+    
+        }
+    
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+    });
 });

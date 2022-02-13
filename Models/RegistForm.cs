@@ -26,18 +26,20 @@ namespace ThuForm.Models
         public string Name { get; set; }
 
         [DisplayName("*信箱")]
-        [Required(ErrorMessage = "聯絡信箱姓名不可空白")]
+        [Required(ErrorMessage = "聯絡信箱不可空白")]
         [EmailAddress(ErrorMessage = "E-Mail格式有誤")]
         public string Mail { get; set; }
 
         [DisplayName("*人數")]
         [Required(ErrorMessage = "人數不可空白")]
         [Range(1, 10, ErrorMessage = "人數必須介於1~10之間")]
+
         public byte Total { get; set; }
 
         //[NotMapped]
         [Display(Name = "*已了解活動資訊")]
         [Range(typeof(bool), "true", "true", ErrorMessage = "請確認已了解活動資訊")]
+
         public bool IsActive { get; set; }
 
         [Display(Name = "備註")]
