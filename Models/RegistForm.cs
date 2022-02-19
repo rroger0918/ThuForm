@@ -11,42 +11,15 @@ namespace ThuForm.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-
+    
     public partial class RegistForm
     {
-        [DisplayName("東海")]
-        [Range(1, 99, ErrorMessage = "屆數必須介於1~99之間")]
         public Nullable<int> Id { get; set; }
-
-        [DisplayName("*姓名")]
-        [Required(ErrorMessage = "姓名不可空白")]
         public string Name { get; set; }
-
-        [DisplayName("*信箱")]
-        [Required(ErrorMessage = "聯絡信箱不可空白")]
-        [EmailAddress(ErrorMessage = "E-Mail格式有誤")]
         public string Mail { get; set; }
-
-        [DisplayName("*人數")]
-        [Required(ErrorMessage = "人數不可空白")]
-        [Range(1, 10, ErrorMessage = "人數必須介於1~10之間")]
-
-        public byte Total { get; set; }
-
-        //[NotMapped]
-        [Display(Name = "*已了解活動資訊")]
-        [Range(typeof(bool), "true", "true", ErrorMessage = "請確認已了解活動資訊")]
-
+        public int Total { get; set; }
         public bool IsActive { get; set; }
-
-        [Display(Name = "備註")]
         public string Note { get; set; }
-
         public int DataID { get; set; }
-
     }
 }
-

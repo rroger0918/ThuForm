@@ -52,12 +52,6 @@ namespace ThuForm.Controllers
         }
 
         [AllowAnonymous]
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
-        [AllowAnonymous]
         [HttpPost]
         public ActionResult Form(RegistForm registForm)
         {

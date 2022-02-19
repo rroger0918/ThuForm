@@ -74,4 +74,3 @@ C:\Users\lee\source\repos\ThuForm\bin\roslyn\System.Buffers.dll
 C:\Users\lee\source\repos\ThuForm\bin\roslyn\System.Memory.dll
 C:\Users\lee\source\repos\ThuForm\bin\roslyn\System.Numerics.Vectors.dll
 C:\Users\lee\source\repos\ThuForm\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\lee\source\repos\ThuForm\obj\Debug\ThuForm.csproj.AssemblyReference.cache
