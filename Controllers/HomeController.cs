@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Data;
+using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
 using ThuForm.Models;
@@ -16,11 +17,11 @@ namespace ThuForm.Controllers
         [AllowAnonymous]
         public ActionResult Index()
         {
-            var registform = db.RegistForm.ToList();
-            //int currentPage = page < 1 ? 1 : page;
-            //var products = db.RegistForm.OrderBy(m => m.DataID).ToList();
-            //var result = products.ToPagedList(currentPage, pageSize);
-            return View(registform);
+          var registform = db.RegistForm.ToList();
+          //int currentPage = page < 1 ? 1 : page;
+          //var products = db.RegistForm.OrderBy(m => m.DataID).ToList();
+          //var result = products.ToPagedList(currentPage, pageSize);
+          return View(registform);
         }
 
         [AllowAnonymous]
@@ -121,6 +122,7 @@ namespace ThuForm.Controllers
         {
             return View("");
         }
+
         [AllowAnonymous]
         [HttpPost]
         public ActionResult Login(string txtUid, string txtPwd)
@@ -150,5 +152,11 @@ namespace ThuForm.Controllers
             }
             return View();
         }
+
+        public ActionResult PageNotFound()
+        {
+            return View();
+        }
+
     }
 }
